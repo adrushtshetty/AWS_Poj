@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Crop Prediction</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="static/images/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="static/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="static/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="static/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="static/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="static/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="static/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="static/css/responsive.css">
+
+</head>
+
+<body>
+
+	<!--PreLoader-->
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--PreLoader Ends-->
+
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="/">
+								<img src="static/images/logo.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li class="current-list-item"><a href="/">Home</a>
+								</li>
+								<li><a href="/about">About</a></li>
+								<li><a href="#">Crop Management</a>
+									<ul class="sub-menu">
+										<li><a href="/crop_prediction">Crop Predicition</a></li>
+										<li><a href="/crop_requisites_1">Crop Requisites</a></li>
+									</ul>
+								</li>
+								<script type="text/javascript"
+									src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+								<script type="text/javascript">
+									$(function () {
+										$('#scrollToBottom').bind("click", function () {
+											$('html, body').animate({ scrollTop: $(document).height() }, 1200);
+											return false;
+										});
+									});
+								</script>
+								<li><a href="javascript:;" id="scrollToBottom">Contact Us</a></li>
+							</ul>
+						</nav>
+
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+
+
+
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>AWS Project - Adrusht Shetty</p>
+						<h1>Crop Prediction</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- check out section -->
+	<div class="checkout-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="checkout-accordion-wrap">
+						<div class="accordion" id="accordionExample">
+							<div class="card single-accordion">
+								<div class="card-header" id="headingOne">
+									<h5 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse"
+											data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Soil Profile
+										</button>
+									</h5>
+								</div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="billing-address-form">
+											<form action="{{ url_for('predict')}}" method="post">
+												<p><input type="text" name="Nitrogen"
+														placeholder="Enter the Niotrogen ( N ) level: "
+														required="required" /></p>
+												<p><input type="text" name="Phosphorus"
+														placeholder="Enter the Phosphorus ( P )level: "
+														required="required" /></p>
+												<p><input type="text" name="Potassium"
+														placeholder="Enter the Potassium ( K ) level: "
+														required="required" /></p>
+												<p><input type="text" name="Temperature"
+														placeholder="Enter the Temperature: " required="required" /></p>
+												<p><input type="text" name="Humidity" placeholder="Enter the Humidity: "
+														required="required" /></p>
+												<p><input type="text" name="pH" placeholder="Enter the pH level: "
+														required="required" /></p>
+												<p><input type="text" name="Rainfall" placeholder="Enter the Rainfall: "
+														required="required" /></p>
+												<br>
+
+
+												<button type="submit" class="btn boxed-btn" style=" border: none;
+											  background-color: #F28123;
+											  padding: 15px 30px;
+											  cursor: pointer;
+											  display: inline-block;
+											  border-radius: 50px;
+											  color: white;
+							  
+											">Predict best crop for soil.</button>
+
+											</form>
+
+
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-4">
+					<div class="order-details-wrap">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h3><span class="orange-text">The Best Crop For Your Soil: </span> {{ prediction_text }}</h3>
+						<!--						<a href="#" class="boxed-btn">Place Order</a>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end check out section -->
+
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<!--				<div class="col-lg-3 col-md-6">-->
+				<!--					<div class="footer-box about-widget">-->
+				<!--						<h2 class="widget-title">About us</h2>-->
+				<!--						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Get in Touch</h2>
+						<ul>
+							<li>Marathahalli, Bangalore, 560037</li>
+							<li>adrushtshetty@gmail.com</li>
+							<li>+91 9880404603</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="#">Crop Management</a>
+								<ul class="sub-menu">
+									<li><a href="/crop_prediction">Crop Predicition</a></li>
+									<li><a href="/crop_requisites_1">Crop Benchmarks</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- end footer -->
+
+	<!-- jquery -->
+	<script src="static/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="static/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="static/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="static/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="static/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="static/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="static/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="static/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="static/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="static/js/main.js"></script>
+
+</body>
+
+</html>
