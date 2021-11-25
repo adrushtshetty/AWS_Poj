@@ -79,5 +79,5 @@ def bench_2():
 @app.route('/crop_requisites_3')
 def bench_3():
     return render_template("bench_3.html")
-
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
